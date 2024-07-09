@@ -1,0 +1,11 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the personal_time_table_init() hook (in hooks/personal_time_table.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="personal_time_table-day-<%%VALUE(id)%%>" class="personal_time_table-day"><%%SELECT%%><%%VALUE(day)%%><%%ENDSELECT%%></td>
+		<td id="personal_time_table-time_start-<%%VALUE(id)%%>" class="personal_time_table-time_start"><%%SELECT%%><%%VALUE(time_start)%%><%%ENDSELECT%%></td>
+		<td id="personal_time_table-time_end-<%%VALUE(id)%%>" class="personal_time_table-time_end"><%%SELECT%%><%%VALUE(time_end)%%><%%ENDSELECT%%></td>
+		<td id="personal_time_table-activity-<%%VALUE(id)%%>" class="personal_time_table-activity"><%%SELECT%%><%%VALUE(activity)%%><%%ENDSELECT%%></td>

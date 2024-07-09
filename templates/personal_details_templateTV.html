@@ -1,0 +1,11 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the personal_details_init() hook (in hooks/personal_details.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="personal_details-full_name-<%%VALUE(id)%%>" class="personal_details-full_name"><%%SELECT%%><%%VALUE(full_name)%%><%%ENDSELECT%%></td>
+		<td id="personal_details-school-<%%VALUE(id)%%>" class="personal_details-school"><%%SELECT%%><%%VALUE(school)%%><%%ENDSELECT%%></td>
+		<td id="personal_details-department-<%%VALUE(id)%%>" class="personal_details-department"><%%SELECT%%><%%VALUE(department)%%><%%ENDSELECT%%></td>
+		<td id="personal_details-year_of_study-<%%VALUE(id)%%>" class="personal_details-year_of_study"><%%SELECT%%><%%VALUE(year_of_study)%%><%%ENDSELECT%%></td>

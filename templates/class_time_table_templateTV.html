@@ -1,0 +1,15 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the class_time_table_init() hook (in hooks/class_time_table.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="class_time_table-day-<%%VALUE(id)%%>" class="class_time_table-day"><%%SELECT%%><%%VALUE(day)%%><%%ENDSELECT%%></td>
+		<td id="class_time_table-time_start-<%%VALUE(id)%%>" class="class_time_table-time_start"><%%SELECT%%><%%VALUE(time_start)%%><%%ENDSELECT%%></td>
+		<td id="class_time_table-time_end-<%%VALUE(id)%%>" class="class_time_table-time_end"><%%SELECT%%><%%VALUE(time_end)%%><%%ENDSELECT%%></td>
+		<td id="class_time_table-unit_code-<%%VALUE(id)%%>" class="class_time_table-unit_code"><%%SELECT%%><%%VALUE(unit_code)%%><%%ENDSELECT%%></td>
+		<td id="class_time_table-venue-<%%VALUE(id)%%>" class="class_time_table-venue"><%%SELECT%%><%%VALUE(venue)%%><%%ENDSELECT%%></td>
+		<td id="class_time_table-school-<%%VALUE(id)%%>" class="class_time_table-school"><%%SELECT%%><%%VALUE(school)%%><%%ENDSELECT%%></td>
+		<td id="class_time_table-department-<%%VALUE(id)%%>" class="class_time_table-department"><%%SELECT%%><%%VALUE(department)%%><%%ENDSELECT%%></td>
+		<td id="class_time_table-year_of_study-<%%VALUE(id)%%>" class="class_time_table-year_of_study"><%%SELECT%%><%%VALUE(year_of_study)%%><%%ENDSELECT%%></td>
